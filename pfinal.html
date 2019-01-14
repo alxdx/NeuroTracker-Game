@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>proyecto final Fernado Alexis</title>
+	<meta charset="utf-8">
+	<style>
+			body { margin: 0;
+				overflow: hidden;
+				background-color: #000000;: 
+			 }
+			
+			div {
+				position: absolute;
+				z-index: 10;
+				color: #fff;
+				font-family: monospace;
+				text-align: center;
+				margin: 10px;
+				width: 100%;
+				float:left;
+			}
+	</style>
+	<script src="build/three.js"></script>
+	<script src="controls/OrbitControls.js"></script>
+	<script src="renderers/Projector.js"></script>
+
+	<script src="shaders/CopyShader.js"></script>
+	<script src="shaders/DigitalGlitch.js"></script>
+
+	<script src="postprocessing/EffectComposer.js"></script>
+	<script src="postprocessing/RenderPass.js"></script>
+	<script src="postprocessing/MaskPass.js"></script>
+	<script src="postprocessing/ShaderPass.js"></script>
+	<script src="postprocessing/GlitchPass.js"></script>
+
+</head>
+<body>
+	
+	<div>
+		<label for="nivel">Nivel:        </label><output name="nivel" id=nivel onchange="updateOptions()"></output>
+		<label for="aciertos">Puntuacion:         </label><output name="aciertos" id=puntuacion onchange="updateOptions()"></output>
+		<label for="vidas">vidas:        </label><output name="vidas" id=fallos onchange="updateOptions()"></output>
+	</div>
+	<script src="final3(logica).js"></script>
+</body>
+</html>
